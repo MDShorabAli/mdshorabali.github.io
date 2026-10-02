@@ -41,20 +41,11 @@ footer h2{color:#fff}footer .btn.main{background:#fff;color:#0B2A4A;border-color
 .contact{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;margin:0 0 28px}.contact dt{color:#9BB0C6}.contact dd{margin:0}
 .copy{font-size:13px;color:#9BB0C6;border-top:1px solid #1F3652;padding-top:18px;margin-top:32px}
 @media(max-width:800px){.hero .wrap,.cols,.cards{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.facts div{border-bottom:1px solid var(--line)}.photo{max-width:340px}}
-@media (max-width: 700px) {
-  html { scroll-padding-top: 110px; }
-  header .wrap {
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .brand { white-space: nowrap; }
-  nav {
-    flex-wrap: wrap;
-    overflow: visible;
-    gap: 6px 16px;
-  }
+#menu{display:none}
+@media (max-width:700px){
+  #menu{display:block;background:none;border:0;color:var(--ink);font-size:28px;line-height:1;padding:6px 12px;cursor:pointer}
+  nav{display:none;position:absolute;top:100%;left:16px;right:16px;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px;box-shadow:0 8px 24px rgba(0,0,0,.18);overflow:visible}
+  nav.open{display:flex}
+  nav a{padding:12px 14px}
+  #theme{align-self:flex-start;margin:6px 14px 8px}
 }
