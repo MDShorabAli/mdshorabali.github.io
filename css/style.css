@@ -41,3 +41,20 @@ footer h2{color:#fff}footer .btn.main{background:#fff;color:#0B2A4A;border-color
 .contact{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;margin:0 0 28px}.contact dt{color:#9BB0C6}.contact dd{margin:0}
 .copy{font-size:13px;color:#9BB0C6;border-top:1px solid #1F3652;padding-top:18px;margin-top:32px}
 @media(max-width:800px){.hero .wrap,.cols,.cards{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.facts div{border-bottom:1px solid var(--line)}.photo{max-width:340px}}
+@media (max-width: 700px) {
+  html { scroll-padding-top: 110px; }
+  header .wrap {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .brand { white-space: nowrap; }
+  nav {
+    flex-wrap: wrap;
+    overflow: visible;
+    gap: 6px 16px;
+  }
+}
